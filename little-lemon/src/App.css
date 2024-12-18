@@ -1,38 +1,555 @@
-.App {
-  text-align: center;
+/* NAV CSS */
+
+.navbar {
+  padding: 0px 13%;
+  padding-top: -9px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #edefee;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.menu-icon {
+  display: none;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-links {
+  display: inline-flex;
+  padding: 1em;
+  gap: 1.8rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* .nav-links.visible {
+  flex-direction: column;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 100%;
+  background-color: #495e57;
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: all 0.3s ease-in-out;
+} */
+
+button {
+  background-color: #f4ce14;
+  color: black;
+  padding: 14px 18px;
+  border: none;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* HEADER CSS */
+
+.header {
+  background-color: #495e57;
+  padding: 40px 0;
+  padding-bottom: 5%;
+}
+
+.header section {
+  color: #edefee;
+  padding: 10px 13%;
+  position: relative;
+}
+
+h2 {
+  color: #f4ce14;
+  font-size: 40px;
+  font-family: Markazi Text Medium;
+}
+
+h3 {
+  font-size: 25px;
+  font-family: Markazi Text Medium;
+  margin-top: -30px;
+}
+
+p {
+  font-family: Karla Regular, sans-serif;
+}
+
+.banner p {
+  font-size: 20px;
+  max-width: 520px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #f4ce14;
+  color: black;
+  padding: 14px 18px;
+  border: none;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.header-img {
+  position: absolute;
+  right: 13%;
+  top: 5px;
+  width: 400px;
+}
+
+.header-img img {
+  width: 100%;
+  height: 400px;
+  border-radius: 20px;
+}
+
+/* ABOUT CSS */
+
+.about-section {
+  color: #edefee;
+  padding: 10px 13%;
+  position: relative;
+  background-color: #f4cf14b1;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.about-title {
+  font-weight: 800;
+  font-size: xx-large;
+}
+
+.about-subtext {
+  color: #000;
+  max-width: 700px;
+}
+
+.about-img {
+  position: absolute;
+  right: 20%;
+  top: 22px;
+  width: 200px;
+  height: 260px;
+  box-shadow: 0px 0px 14px 3px #f8f5f9;
+}
+
+/* MENU CSS */
+
+.menu-container {
+  margin: 80px auto;
+  padding: 4% 13%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-color: #edefee;
+}
+
+.menu-container h2 {
+  color: #000;
+}
+
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.cards {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem 1rem;
+}
+
+.menu-items {
+  /* height: 400px; */
+  width: 350px;
+  background: #edefee;
+  border-radius: 8px;
+}
+
+.menu-container img {
+  width: 100%;
+  height: 233px;
+  border-radius: 8px;
+}
+
+.menu-content {
+  padding: 5px 15px;
+}
+
+.menu-content .heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-content .heading p {
+  color: #ee9972;
+}
+
+.menu-content .orderbtn {
+  padding: 5px 12px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* BOOKINGFORM CSS */
+
+/* .booking-form {
+  height: 55vh;
+  background-color: #495e57;
+  padding: 2rem 2rem;
+  font-family: "Karla", sans-serif;
+  color: #edefee;
+} */
+
+.bookings-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* .form-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 20px;
+} */
+
+/* input,
+select {
+  height: 35px;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.25rem 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+label {
+  font-size: 16px;
+  font-style: italic;
+} */
+
+fieldset {
+  display: flex;
+  width: 480px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #000;
+}
+
+sup {
+  color: rgb(0, 225, 255);
+  top: -2px;
+  font-size: 95%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+input,
+select {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  height: 32px;
+  padding: 0 8px;
+}
+
+.Field {
+  position: relative;
+  padding-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.FieldError {
+  position: absolute;
+  bottom: -6px;
+  color: rgb(0, 225, 255);
+  font-size: 12px;
+}
+
+.Row {
+  display: flex;
+  flex-direction: row;
+}
+
+.booking-button {
+  padding: 8px 12px;
+  margin-top: 20px;
+  background: #f4ce14;
+  color: #000;
+  border: none;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.booking-button:hover {
+  transform: scale(0.95);
+  transition-duration: 200ms;
+  background-color: hsla(50, 91%, 52%, 0.925);
+  cursor: pointer;
+}
+
+.booking-button:disabled,
+button[disabled] {
+  color: #666666;
+  cursor: not-allowed;
+}
+
+/* BOOKINGPAGE CSS */
+
+.booking-page {
+  background-color: #edefee;
+  padding-top: 1px;
+  padding-bottom: 3%;
+}
+
+.booking-page h1 {
+  text-align: center;
+  color: #f4ce14;
+}
+
+.booking-page p {
+  text-align: center;
+  color: #000;
+}
+
+/* CONFIRMATION CSS */
+
+.booking-confirmation {
+  height: 60vh;
+  background-color: #edefee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Karla", sans-serif;
+}
+
+.booking-confirmed {
+  margin: 3rem 0;
+  text-transform: capitalize;
+  font-size: 24px;
+  font-weight: 800;
+  color: #495e57;
+}
+
+.redirect-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6vw;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.redirect-button {
+  background-color: #f4ce14;
+  color: black;
+  padding: 15px 40px;
+  border: none;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.redirect-button:hover {
+  background-color: #f4ce14;
+  color: #464646 !important;
+  transition: 0.2s;
+}
+
+/* FOOTER CSS */
+
+footer section {
+  padding: 20px 13%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  background-color: #edefee;
+}
+
+.footer-img {
+  margin-top: 12px;
+  cursor: pointer;
+  width: 150px;
+}
+
+footer h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #000000;
+  font-weight: lighter;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer ul li {
+  padding: 8px 0;
+  list-style: none;
+  font-weight: lighter;
+}
+
+footer ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-link {
+    color: #fff;
+  }
+
+  .nav-links.visible {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #495e57;
+    z-index: 1000;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navbar {
+    background: #fff;
+    padding: 10px 8%;
+  }
+
+  .header {
+    display: grid;
+    padding: 3rem 0.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-img {
+    display: none;
+  }
+
+  .about-us {
+    padding: 0;
+    height: 90vh;
+    width: 50vh;
+    display: flex;
+  }
+
+  .about-title {
+    font-size: 30px;
+  }
+
+  .about-subtext {
+    font-size: 15px;
+  }
+
+  .about-img {
+    width: 180px;
+    height: 230px;
+    position: relative;
+    margin-left: 55px;
+  }
+
+  footer {
+    padding: 0;
+  }
+
+  .footer-container {
+    display: grid;
+  }
+
+  .footer-img {
+    width: 100px;
+    padding-bottom: 1rem;
+  }
+
+  .footer-columns ul {
+    padding-top: -1rem;
+    line-height: 15%;
+  }
+
+  footer h3 {
+    padding-bottom: 1%;
+  }
+
+  .booking-confirmation {
+    display: block;
+    padding: 2rem;
+  }
+
+  .redirect-buttons {
+    display: inline-block;
+    padding-top: 9rem;
+  }
+
+  .redirect-button {
+    margin: 9px;
+    padding: 16px;
+  }
+
+  .bookings-container {
+    display: block;
+    width: 50vh;
+  }
+
+  .booking-page p {
+    display: block;
+    font-size: smaller;
+  }
+
+  .booking-page h1 {
+    font-size: x-large;
+  }
+
+  fieldset {
+    width: 300px;
+    margin-left: 15px;
+    border: none;
+  }
+
+  .booking-button:disabled,
+  button[disabled] {
+    color: #666666;
+    cursor: not-allowed;
   }
 }

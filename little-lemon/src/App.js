@@ -1,8 +1,15 @@
-import './App.css';
+import "./App.css";
+import Nav from "./components/Nav";
+import Routing from "./components/Routing";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>Capstone project</div>
+    <>
+      <Nav />
+      <Routing />
+      <Footer />
+    </>
   );
 }
 
